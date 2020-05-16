@@ -1,14 +1,14 @@
 swagger: '2.0'
 info:
   version: '1.0.0'
-  title: Tomochain JSON-RPC
+  title: Tao Network JSON-RPC
   description: >-
-    A collection holding all the Tomochain JSON-RPC API calls
+    A collection holding all the Tao Network JSON-RPC API calls
 
-    [Swagger Docs](https://tomochain.github.io/rpc-swagger/)
+    [Swagger Docs](https://swagger.tao.network/)
 
   contact: {}
-host: rpc.tomochain.com
+host: rpc.tao.network
 basePath: /
 schemes:
 - https
@@ -132,9 +132,9 @@ paths:
 
         - `String` - The current network id.
 
-          - `"88"`: Tomochain Mainnet
+          - `"558"`: Tao Network Mainnet
 
-          - `"89"`: Tomochain Testnet
+          - `"89"`: Tao Network Testnet
 
       tags:
       - net
@@ -1697,7 +1697,7 @@ paths:
 
 
       tags:
-        - tomox
+        - waihui
       operationId: getAskTree
       deprecated: false
       produces:
@@ -1741,7 +1741,7 @@ paths:
 
 
       tags:
-        - tomox
+        - waihui
       operationId: getAsks
       deprecated: false
       produces:
@@ -1785,7 +1785,7 @@ paths:
 
 
       tags:
-        - tomox
+        - waihui
       operationId: getBestAsk
       deprecated: false
       produces:
@@ -1831,7 +1831,7 @@ paths:
 
 
       tags:
-        - tomox
+        - waihui
       operationId: getBidTree
       deprecated: false
       produces:
@@ -1875,7 +1875,7 @@ paths:
 
 
       tags:
-        - tomox
+        - waihui
       operationId: getBids
       deprecated: false
       produces:
@@ -1919,7 +1919,7 @@ paths:
 
 
       tags:
-        - tomox
+        - waihui
       operationId: getBestBid
       deprecated: false
       produces:
@@ -1962,7 +1962,7 @@ paths:
         `Object` - list borrows (interest, amount)
 
       tags:
-        - tomox
+        - waihui
       operationId: getBorrows
       deprecated: false
       produces:
@@ -2005,7 +2005,7 @@ paths:
         `Object` - list invests (interest, amount)
 
       tags:
-        - tomox
+        - waihui
       operationId: getInvests
       deprecated: false
       produces:
@@ -3010,7 +3010,7 @@ definitions:
     title: getAskTree
     example:
       jsonrpc: '2.0'
-      method: 'tomox_getAskTree'
+      method: 'waihui_getAskTree'
       params:
       - '0xf992cf45394dAc5f50A26446de17803a79B940da'
       - '0x0000000000000000000000000000000000000001'
@@ -3037,7 +3037,7 @@ definitions:
     title: getAsks
     example:
       jsonrpc: '2.0'
-      method: 'tomox_getAsks'
+      method: 'waihui_getAsks'
       params:
       - '0xf992cf45394dAc5f50A26446de17803a79B940da'
       - '0x0000000000000000000000000000000000000001'
@@ -3064,7 +3064,7 @@ definitions:
     title: getBestAsk
     example:
       jsonrpc: '2.0'
-      method: 'tomox_getBestAsk'
+      method: 'waihui_getBestAsk'
       params:
       - '0xf992cf45394dAc5f50A26446de17803a79B940da'
       - '0x0000000000000000000000000000000000000001'
@@ -3091,7 +3091,7 @@ definitions:
     title: getBidTree
     example:
       jsonrpc: '2.0'
-      method: 'tomox_getBidTree'
+      method: 'waihui_getBidTree'
       params:
       - '0xf992cf45394dAc5f50A26446de17803a79B940da'
       - '0x0000000000000000000000000000000000000001'
@@ -3118,7 +3118,7 @@ definitions:
     title: getBids
     example:
       jsonrpc: '2.0'
-      method: 'tomox_getBids'
+      method: 'waihui_getBids'
       params:
       - '0xf992cf45394dAc5f50A26446de17803a79B940da'
       - '0x0000000000000000000000000000000000000001'
@@ -3145,7 +3145,7 @@ definitions:
     title: getBestBid
     example:
       jsonrpc: '2.0'
-      method: 'tomox_getBestBid'
+      method: 'waihui_getBestBid'
       params:
       - '0xf992cf45394dAc5f50A26446de17803a79B940da'
       - '0x0000000000000000000000000000000000000001'
@@ -3172,7 +3172,7 @@ definitions:
     title: getBorrows
     example:
       jsonrpc: '2.0'
-      method: 'tomox_getBorrows'
+      method: 'waihui_getBorrows'
       params:
       - '0xf992cf45394dAc5f50A26446de17803a79B940da'
       - 86400
@@ -3199,7 +3199,7 @@ definitions:
     title: getInvest
     example:
       jsonrpc: '2.0'
-      method: 'tomox_getInvests'
+      method: 'waihui_getInvests'
       params:
       - '0xf992cf45394dAc5f50A26446de17803a79B940da'
       - 86400
@@ -3254,7 +3254,7 @@ tags:
   description: API for network request
 - name: eth
   description: API for eth information
-- name: tomox
-  description: API for tomox request
+- name: waihui
+  description: API for waihui request
 - name: posv
   description: API for posv request
